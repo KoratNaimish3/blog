@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html body {
+    background-color: #0E1428;
+  }
+
+.btn_sign{
+    color: white;
+    background-color:cadetblue;
+    margin-right: 50px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color:darkslategrey;
+}
+
+.hero-section {
+  position: relative;
+  padding: 150px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: hidden;
+  
+
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* adjust this to control background opacity */
+  z-index: -1;
+}
+
+
+.profile-container{
+    /* border: 2px solid red; */
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #1A202C;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0 , 0, 0, 0.7);
+}
+.profile-title
+{
+    color: #E2E8F0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.profile-button:hover{
+    background-color: #2B6CB0;
+}
+
+.profile-button{
+    width: 100%;
+    padding: 10px;
+    background-color: #3182Ce;
+    color: #E2E8F0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-input{
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: #2D3748;
+    color: #E2E8F0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.input-icon
+{
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    color: #A0AEC0;
+}
+
+
+.input-group
+{
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.profile-input::placeholder{
+    color: #A0AEC0;
+
+}
+
+.profile-image-input{
+    display: none;
+}
+
+.profile-camera-icon{
+    background-color: #4A5568;
+    color: #E2E8F0;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.profile-icon{
+    color: #A0AEC0;
+    font-size: 40px;
+}
+
+.profile-placeholder
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2D3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4A5568;
+}
+
+.profile-image-label{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4A5568;
+}
+
+.profile-image-section{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background-color: #343a40; /* Bootstrap dark */
+  color: white;
+  width: 70px;
+  transition: width 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
+/* in your CSS file */
+.responsive-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .responsive-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 420px) {
+  .responsive-img {
+    height: 180px;
+  }
+}
+
